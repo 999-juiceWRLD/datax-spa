@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+    .link-element:not(:last-child) {
+        /* border-bottom: 1px solid #4b5563; border-gray-600 */
+        @apply border-b border-gray
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    .col-nav {
+        @apply fixed sm:min-w-[35%] h-screen z-50 bg-black pl-2 w-[35%] pt-[12%] top-0 ease-in-out delay-100 duration-1000;
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    .btn {
+        /* @apply border-b-2; */
+        border-bottom: 2px solid transparent;
+        transition: all 0.6s;
+    }
+
+    .btn:hover {
+        /* @apply transition-all duration-75 delay-200 */
+        border-bottom-color: white;
+        /* @apply border-white */
+        transition: all 0.6s;
+    }
 }
