@@ -1,6 +1,8 @@
 
 # DataX: An Experimental Single Page App
 
+You can view the page [here](https://datax-spa-exp.vercel.app/).
+
 This website's design is highly influenced by [React JS & Tailwind CSS video](https://www.youtube.com/watch?v=ZU-drSVodBw) by @fireclint. However, there are some changes in styling and lots of changes in the background.
 
 First of all, instead of plain React, I used React with Typescript. Also, apart from the video I cared more about components, e.g. `<Card />`, therefore I used `.map()` function to arrays which contained the relevant information. At `/page.tsx`, I defined each `<Card />` components within `<CardContainer />`.
